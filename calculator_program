@@ -7,16 +7,17 @@ class Cal
 		Scanner input = new Scanner(System.in); 
 		
 		//ADDITION FUNCTION
-		int addOperation()
+		float addOperation()
 		{
-			int result=0,value=0,noOfElements=0;
+			float result=0,value=0;
+			int noOfElements=0;
 			//Enter total value to add
 			noOfElements=input.nextInt();
 			for(int i=0;i < noOfElements;i++)
 			{
 
 				//Enter value to add one by one
-				value=input.nextInt();	
+				value=input.nextFloat();	
 				result+=value;
 			}
 			
@@ -25,15 +26,16 @@ class Cal
 		
 		//MULTIPLY FUNCTION
 		
-		int multiplyOperation()
+		float multiplyOperation()
 		{
-			int result=1,value=0,noOfElements=0;
+			float result=1,value=0;
+			int noOfElements=0;
 			//Enter total value to Multiply
 			noOfElements=input.nextInt();
 			for(int i=0 ; i < noOfElements ; i++)
 			{
 				//Enter value one by one
-				value=input.nextInt();	
+				value=input.nextFloat();	
 				result*=value;
 			}
 			
@@ -42,10 +44,10 @@ class Cal
 		
 		//DIVISION FUNCTION
 		
-		int divisionOperation()
+		float divisionOperation()
 		{
 			//Enter values to divide
-			int numerator=input.nextInt(),denumerator=input.nextInt();
+			float numerator=input.nextFloat(),denumerator=input.nextFloat();
 			return numerator/denumerator;
 		}
 		
